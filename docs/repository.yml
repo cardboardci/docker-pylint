@@ -1,0 +1,10 @@
+---
+name: Docker Pylint
+slug: docker-pylint
+project: cardboardci
+namespace: []
+description: Pylint is a Python static code analysis tool which looks for programming errors.
+license:
+  name: MIT
+tags:
+  - docker
