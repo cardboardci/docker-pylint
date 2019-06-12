@@ -1,0 +1,8 @@
+---
+name: github
+provider: github.com
+repository: docker-pylint
+url: https://github.com/cardboardci/docker-pylint
+clone:
+  ssh: git@github.com:cardboardci/docker-pylint.git
+  https: https://github.com/cardboardci/docker-pylint.git
