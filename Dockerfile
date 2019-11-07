@@ -1,5 +1,15 @@
-FROM alpine:3.8
-COPY rootfs/ /
+FROM cardboardci/ci-core:latest
+USER root
+
+COPY provision/pkglist /cardboardci/pkglist
+RUN apt-get update \
+    && xargs -a /cardboardci/pkglist apt-get install -y \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip-3.3 install pylint
+
+USER cardboardci
 
 ##
 ## Image Metadata
