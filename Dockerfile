@@ -9,7 +9,7 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install pylint==2.4.4
+RUN pip3 install pylint==2.4.4
 
 USER cardboardci
 
