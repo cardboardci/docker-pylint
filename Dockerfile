@@ -1,4 +1,4 @@
-FROM cardboardci/ci-core:focal
+FROM cardboardci/ci-core@sha256:5b93f4c8cc1ddaa809f9c27d0a865a974ccb43e5e3d38334df1b0d77ea1843fb
 USER root
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -9,7 +9,7 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip-3.3 install pylint==2.4.4
+RUN pip3 install pylint==2.4.4
 
 USER cardboardci
 
