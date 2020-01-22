@@ -1,4 +1,4 @@
 python=2.7.17-1
-python-pip=18.1-5build1
+python-pip=18.1-5ubuntu1
 python3=3.7.5-1ubuntu1
-python3-pip=18.1-5build1
+python3-pip=18.1-5ubuntu1
