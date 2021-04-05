@@ -1,0 +1,18 @@
+slug: docker-pylint
+description: Pylint is a Python static code analysis tool which looks for programming errors.
+project: cardboardci
+namespace: docker
+status: archived
+icon: icon.svg
+license:
+  type: MIT
+  content: Jonathan Beverly <jrbeverly>
+  year: 2019
+topics: |-
+  [
+    "python",
+    "dockerfile",
+    "linter",
+    "code-quality",
+    "code-analysis"
+  ]
